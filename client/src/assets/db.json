@@ -1,0 +1,34 @@
+{
+    "products": [
+        {
+            "id" : 1,
+            "kode" : "k-01",
+            "nama" : "sate",
+            "harga" : 15000
+        },
+        {
+            "id" : 2,
+            "kode" : "k-02",
+            "nama" : "bakso",
+            "harga" : 10000
+        },
+        {
+            "id" : 3,
+            "kode" : "k-03",
+            "nama" : "mie ayam",
+            "harga" : 12000
+        },
+        {
+            "id" : 4,
+            "kode" : "k-04",
+            "nama" : "ikan bakar",
+            "harga" : 20000
+        },
+        {
+            "id" : 5,
+            "kode" : "k-05",
+            "nama" : "es teh",
+            "harga" : 3000
+        }
+    ]
+}
