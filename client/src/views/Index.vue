@@ -1,11 +1,24 @@
 <script>
-import json from '../assets/db.json'
+import axios from 'axios'
+import { onMounted, ref } from 'vue'
       export default{
-          data(){
-              return{
-                  myJson: json
-              }
-          }
+        setup() {
+            let data = ref([]);
+
+            onMounted(() => {
+                axios.get('http://localhost:3000/products')
+                .then((result) => {
+                    // console.log(result)
+                    data.value = result.data
+                }).catch((err) => {
+                    console.log(err.response)
+                });
+            });
+
+            return {
+                data
+            }
+        }  
       }
 </script>
 
@@ -37,8 +50,15 @@ import json from '../assets/db.json'
 
         <div class="row mt-4">
             <h3>Products</h3>
-            <div class="col-md-4">
-                <div v-for="data in myJson">{{data}}</div>
+            <div class="col-md-3 mt-4" v-for="datas in data">
+                <div class="card shadow" style="width: 18rem;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                      <h5 class="card-title">{{ datas.nama }}</h5>
+                      <p class="card-text">Harga : Rp.{{ datas.harga }}</p>
+                      <a href="#" class="btn btn-primary">Beli</a>
+                    </div>
+                  </div>
             </div>
         </div>
     </div>
