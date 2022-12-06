@@ -18,49 +18,57 @@
         "id" : 1,
         "kode" : "k-01",
         "nama" : "sate",
-        "harga" : 15000
+        "harga" : 15000,
+        "tag" : "makanan"
     },
     {
         "id" : 2,
         "kode" : "k-02",
         "nama" : "bakso",
-        "harga" : 10000
+        "harga" : 10000,
+        "tag" : "makanan"
     },
     {
         "id" : 3,
         "kode" : "k-03",
         "nama" : "mie ayam",
-        "harga" : 12000
+        "harga" : 12000,
+        "tag" : "makanan"
     },
     {
         "id" : 4,
         "kode" : "k-04",
         "nama" : "ikan bakar",
-        "harga" : 20000
+        "harga" : 20000,
+        "tag" : "makanan"
     },
     {
         "id" : 5,
         "kode" : "k-05",
         "nama" : "es teh",
-        "harga" : 3000
+        "harga" : 3000,
+        "tag" : "miuman"
     },
     {
       "id" : 6,
       "kode" : "k-06",
       "nama" : "es jeruk",
-      "harga" : 3000
+      "harga" : 3000,
+      "tag" : "miuman"
     },
     {
       "id" : 7,
       "kode" : "k-07",
       "nama" : "air mineral",
-      "harga" : 2000
+      "harga" : 2000,
+      "tag" : "miuman"
     },
     {
       "id" : 8,
       "kode" : "k-08",
       "nama" : "ayam bakar",
-      "harga" : 8000
+      "harga" : 8000,
+      "tag" : "makanan"
     }
   ],
   "keranjang" : [],
